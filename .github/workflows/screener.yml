@@ -1,0 +1,46 @@
+name: Screener Nasdaq
+
+on:
+  schedule:
+    # Du lundi au vendredi à 22:30 UTC (23:30 heure belge en hiver, 00:30 en été)
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch:   # permet aussi de le lancer à la main
+
+permissions:
+  contents: write
+
+jobs:
+  screener:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les bibliothèques
+        run: pip install -r requirements.txt
+
+      - name: Lancer le screener
+        run: python nasdaq_screener.py --days 5 --no-open --out resultats
+
+      - name: Publier les résultats
+        run: |
+          mkdir -p docs/archives
+          cp resultats/screener_*.html docs/index.html
+          cp resultats/screener_*.csv docs/dernier.csv
+          cp resultats/screener_*.csv docs/archives/
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add docs
+          git commit -m "Screener $(date -u +%F)" || echo "Rien de nouveau"
+          git push
+
+      - name: Conserver les fichiers du jour
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultats-screener
+          path: resultats/
+          retention-days: 30
