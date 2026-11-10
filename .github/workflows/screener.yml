@@ -38,6 +38,48 @@ jobs:
           git commit -m "Screener $(date -u +%F)" || echo "Rien de nouveau"
           git push
 
+      - name: Envoyer les résultats par e-mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          python - <<'PY'
+          import csv, glob, os, smtplib
+          from email.message import EmailMessage
+          csv_path = sorted(glob.glob("resultats/screener_*.csv"))[-1]
+          html_path = sorted(glob.glob("resultats/screener_*.html"))[-1]
+          day = os.path.basename(csv_path)[9:19]
+          with open(csv_path, encoding="utf-8") as f:
+              rows = list(csv.DictReader(f, delimiter=";"))
+          b = [r for r in rows if r["type"] == "B"]
+          a = [r for r in rows if r["type"] == "A"]
+          lines = [f"Screener Nasdaq – séance du {day}", "",
+                   f"Signaux B (cassure après compression) : {len(b)}",
+                   f"Setups A (compression près du plus haut) : {len(a)}", ""]
+          if b:
+              lines.append("Signaux B (classés par volume / moyenne 50 j) :")
+              for r in b[:20]:
+                  lines.append(f"  {r['ticker']:<6} {r['date']}  clôture {r['close']}  var. {r['gain']} %  volume x{r['vol_x']}  {r['name'][:40]}")
+              lines.append("")
+          lines += [f"Page complète avec graphiques : {os.environ['PAGE_URL']}",
+                    "Pièces jointes : CSV (Excel) et page HTML (à ouvrir dans le navigateur).",
+                    "", "Outil d'aide à l'analyse, pas un conseil en investissement."]
+          msg = EmailMessage()
+          msg["Subject"] = f"Screener Nasdaq {day} : {len(b)} signal(aux) B, {len(a)} setup(s) A"
+          msg["From"] = os.environ["GMAIL_USER"]
+          msg["To"] = os.environ["MAIL_TO"]
+          msg.set_content("\n".join(lines))
+          for path, sub in ((csv_path, "csv"), (html_path, "html")):
+              with open(path, "rb") as f:
+                  msg.add_attachment(f.read(), maintype="text", subtype=sub, filename=os.path.basename(path))
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
+              s.send_message(msg)
+          print("E-mail envoyé.")
+          PY
+
       - name: Conserver les fichiers du jour
         uses: actions/upload-artifact@v4
         with:
