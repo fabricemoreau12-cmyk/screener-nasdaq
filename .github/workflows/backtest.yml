@@ -1,0 +1,54 @@
+name: Backtest screener
+
+on:
+  workflow_dispatch:   # lancement manuel uniquement
+
+permissions:
+  contents: read
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les bibliothèques
+        run: pip install -r requirements.txt
+
+      - name: Lancer le backtest (tout le Nasdaq, 10 ans)
+        run: python backtest_screener.py
+
+      - name: Conserver les résultats
+        uses: actions/upload-artifact@v4
+        with:
+          name: backtest-resultats
+          path: backtest_resultats.zip
+          retention-days: 30
+
+      - name: Envoyer les résultats par e-mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          python - <<'PY'
+          import os, smtplib
+          from email.message import EmailMessage
+          resume = open("backtest/resume.txt", encoding="utf-8").read()
+          msg = EmailMessage()
+          msg["Subject"] = "Backtest screener Nasdaq : résultats"
+          msg["From"] = os.environ["GMAIL_USER"]
+          msg["To"] = os.environ["MAIL_TO"]
+          msg.set_content(resume + "\n\nLe fichier backtest_resultats.zip est en pièce jointe : envoyez-le à Claude pour l'analyse.")
+          with open("backtest_resultats.zip", "rb") as f:
+              msg.add_attachment(f.read(), maintype="application", subtype="zip", filename="backtest_resultats.zip")
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
+              s.send_message(msg)
+          print("E-mail envoyé.")
+          PY
