@@ -1,66 +1,65 @@
 ticker;name;type;date;close;gain;vol_x;r3;r6;dist
 EMBC;Embecta Corp. - Common Stock;B;2026-11-24;8,08;40,64;7,71;62,9;145,59;1,82
 CBLL;CeriBell, Inc. - Common Stock;B;2026-11-23;29,29;6,94;2,35;22,3;55,8;0,81
-KRSA;Korsana Biosciences, Inc. - Common Stock;B;2026-11-19;35,45;6,55;2,29;30,19;60,26;4,87
 WTW;Willis Towers Watson Public Limited Company - Ordinary Shares;B;2026-11-25;352,56;1,67;2,22;3,82;39,9;1,09
 ALKS;Alkermes plc - Ordinary Shares;B;2026-11-24;49,92;7,94;1,55;1,55;31,06;0,36
-MKTX;MarketAxess Holdings, Inc. - Common Stock;A;2026-11-25;165,5;0,05;1,16;1,87;25,81;0,18
-PRTH;Priority Technology Holdings, Inc. - Common Stock;A;2026-11-25;7,92;0,0;0,37;46,4;27,13;0,25
-TECH;Bio-Techne Corp - Common Stock;A;2026-11-25;72,65;-0,22;2,26;0,25;42,9;0,33
-PTC;PTC Inc. - Common Stock;A;2026-11-25;196,0;0,0;0,76;23,31;41,22;0,55
-DSGR;Distribution Solutions Group, Inc. - Common Stock;A;2026-11-25;35,06;0,11;0,88;0,66;27,86;0,68
-EXPO;Exponent, Inc. - Common Stock;A;2026-11-25;91,76;0,79;0,61;28,97;57,07;0,71
-OPCH;Option Care Health, Inc. - Common Stock;A;2026-11-25;31,64;0,16;0,53;31,94;46,62;0,82
-SIGI;Selective Insurance Group, Inc. - Common Stock;A;2026-11-25;104,92;0,51;0,65;13,67;20,2;0,82
-BRZE;Braze, Inc. - Class A Common Stock;A;2026-11-25;46,41;-0,06;0,72;36,14;98,67;0,85
-ADP;Automatic Data Processing, Inc. - Common Stock;A;2026-11-25;316,72;1,91;1,02;11,25;44,06;0,89
-CVCO;Cavco Industries, Inc. - Common Stock;A;2026-11-25;694,9;1,1;0,76;21,85;29,06;0,94
-WMT;Walmart Inc. - Common Stock;A;2026-11-25;131,94;-0,28;1,04;28,56;10,97;0,94
-BMBL;Bumble Inc. - common stock;A;2026-11-25;5,98;0,0;0,54;120,66;83,44;0,99
-REGN;Regeneron Pharmaceuticals, Inc. - Common Stock;A;2026-11-25;981,87;-0,53;0,98;21,56;57,98;1,0
-RNW;ReNew Energy Global plc - Class A Shares;A;2026-11-25;6,89;-0,29;1,2;1,03;10,42;1,15
-EXC;Exelon Corporation - Common Stock;A;2026-11-25;46,51;0,61;0,98;5,8;2,04;1,23
-AVPT;AvePoint, Inc. - Class A Common Stock;A;2026-11-25;17,3;1,35;0,84;20,98;68,45;1,26
-AXGN;Axogen, Inc. - Common Stock;A;2026-11-25;59,34;-0,82;0,82;14,71;46,81;1,28
-GDYN;Grid Dynamics Holdings, Inc. - Class A Common Stock;A;2026-11-25;14,12;1,73;0,91;78,96;91,59;1,4
-MDLZ;Mondelez International, Inc. - Class A Common Stock;A;2026-11-25;67,81;1,19;1,21;8,62;8,69;1,61
-LIN;Linde plc - Ordinary Shares;A;2026-11-25;524,61;1,51;0,91;8,09;4,51;1,65
-RPRX;Royalty Pharma plc - Class A Ordinary Shares;A;2026-11-25;70,57;-1,04;1,85;13,97;29,53;1,71
-XEL;Xcel Energy Inc. - Common Stock;A;2026-11-25;81,11;0,36;0,87;5,12;2,33;1,72
-CINF;Cincinnati Financial Corporation - Common Stock;A;2026-11-25;192,32;1,06;0,65;11,48;20,2;1,74
-CCEP;Coca-Cola Europacific Partners plc - Ordinary Shares;A;2026-11-25;117,99;0,57;0,71;9,94;27,85;2,01
-ITRI;Itron, Inc. - Common Stock;A;2026-11-25;100,81;2,88;0,51;1,55;20,6;2,36
-POOL;Pool Corporation - Common Stock;A;2026-11-25;217,52;1,72;0,63;16,91;17,77;2,38
-SGRY;Surgery Partners, Inc. - Common Stock;A;2026-11-25;26,55;-1,04;0,45;90,6;94,51;2,48
-CTAS;Cintas Corporation - Common Stock;A;2026-11-25;227,65;0,84;0,93;11,51;31,54;2,49
-CROX;Crocs, Inc. - Common Stock;A;2026-11-25;159,93;0,43;0,57;31,42;34,83;2,62
-LNT;Alliant Energy Corporation - Common Stock;A;2026-11-25;73,14;0,77;0,72;7,23;1,34;2,64
-ESQ;Esquire Financial Holdings, Inc. - Common Stock;A;2026-11-25;130,85;2,45;0,77;14,66;19,46;2,71
-ACGL;Arch Capital Group Ltd. - Common Stock;A;2026-11-25;110,29;0,55;0,63;11,67;21,64;2,94
-CME;CME Group Inc. - Class A Common Stock;A;2026-11-25;311,74;0,81;0,69;10,96;12,37;3,0
-AMGN;Amgen Inc. - Common Stock;A;2026-11-25;469,24;-0,99;1,17;7,38;39,46;3,05
-FIZZ;National Beverage Corp. - Common Stock;A;2026-11-25;37,25;-0,48;0,72;14,72;0,03;3,12
-BIIB;Biogen Inc. - Common Stock;A;2026-11-25;261,44;-2,85;1,02;18,03;33,12;3,13
-SBUX;Starbucks Corporation - Common Stock;A;2026-11-25;107,74;1,28;1,06;0,45;6,94;3,37
-DRH;Diamondrock Hospitality Company - Common Stock;A;2026-11-25;14,34;0,28;1,58;13,0;28,38;3,43
-PCTY;Paylocity Holding Corporation - Common Stock;A;2026-11-25;179,33;2,29;0,7;13,39;61,73;3,55
-WMG;Warner Music Group Corp. - Class A Common Stock;A;2026-11-25;32,46;0,19;0,85;15,15;0,34;3,67
-APPN;Appian Corporation - Class A Common Stock;A;2026-11-25;55,08;0,51;0,72;33,04;149,91;3,81
-UTHR;United Therapeutics Corporation - Common Stock;A;2026-11-25;590,67;0,93;0,52;11,89;5,08;3,84
-WDFC;WD-40 Company - Common Stock;A;2026-11-25;227,4;1,36;0,93;3,87;12,75;3,92
-NDAQ;Nasdaq, Inc. - Common Stock;A;2026-11-25;107,07;0,61;0,78;7,77;17,66;3,93
-HLT;Hilton Worldwide Holdings Inc. - Common Stock;A;2026-11-25;366,2;0,52;1,01;12,44;8,49;3,97
-MAR;Marriott International - Class A Common Stock;A;2026-11-25;415,77;-0,11;1,09;17,49;7,78;4,05
-APOG;Apogee Enterprises, Inc. - Common Stock;A;2026-11-25;47,46;3,9;0,55;16,84;25,76;4,12
-SAIC;Science Applications International Corporation - Common Stock;A;2026-11-25;148,4;2,52;0,86;15,07;43,11;4,33
-MANH;Manhattan Associates, Inc. - Common Stock;A;2026-11-25;251,97;0,93;1,36;12,61;75,98;4,36
-KIDS;OrthoPediatrics Corp. - Common Stock;A;2026-11-25;33,01;-0,51;0,82;41,55;85,35;4,4
-LLYVK;Liberty Live Holdings, Inc. - Series C Liberty Live Group Common Stock;A;2026-11-25;107,79;-0,74;1,53;4,21;9,99;4,6
-ULTA;Ulta Beauty, Inc. - Common Stock;A;2026-11-25;642,64;0,26;1,05;18,99;23,55;4,66
-CLMB;Climb Global Solutions, Inc. - Common Stock;A;2026-11-25;42,78;2,79;0,73;47,26;105,77;4,7
-MORN;Morningstar, Inc. - Common Stock;A;2026-11-25;239,24;1,01;0,77;9,34;32,83;4,7
-ROP;Roper Technologies, Inc. - Common Stock;A;2026-11-25;483,09;1,39;1,09;14,29;51,08;4,76
-KOD;Kodiak Sciences Inc - Common Stock;A;2026-11-25;110,38;-3,75;0,36;182,16;205,59;4,77
-ALRM;Alarm.com Holdings, Inc. - Common Stock;A;2026-11-25;66,07;-1,11;0,75;14,7;49,82;4,79
-AMRX;Amneal Pharmaceuticals, Inc. - Class A Common Stock;A;2026-11-25;21,48;-0,79;0,46;19,27;65,87;4,79
-GEHC;GE HealthCare Technologies Inc. - Common Stock;A;2026-11-25;83,33;0,98;0,66;14,97;32,56;4,83
+REGN;Regeneron Pharmaceuticals, Inc. - Common Stock;A;2026-11-27;992,14;1,05;0,55;24,92;61,38;0,04
+TECH;Bio-Techne Corp - Common Stock;A;2026-11-27;72,82;0,23;0,84;0,65;40,91;0,1
+PTC;PTC Inc. - Common Stock;A;2026-11-27;196,85;0,43;0,25;25,26;41,89;0,12
+SAFT;Safety Insurance Group, Inc. - Common Stock;A;2026-11-27;104,55;0,0;0,36;0,88;49,0;0,14
+MKTX;MarketAxess Holdings, Inc. - Common Stock;A;2026-11-27;165,49;-0,01;0,33;1,7;27,26;0,19
+EXPO;Exponent, Inc. - Common Stock;A;2026-11-27;92,17;0,45;0,31;28,86;58,04;0,27
+RNW;ReNew Energy Global plc - Class A Shares;A;2026-11-27;6,93;0,58;0,53;1,61;8,45;0,57
+DSGR;Distribution Solutions Group, Inc. - Common Stock;A;2026-11-27;35,08;0,06;2,88;0,83;29,93;0,62
+BRZE;Braze, Inc. - Class A Common Stock;A;2026-11-27;46,51;0,22;0,23;34,69;81,47;0,64
+OPCH;Option Care Health, Inc. - Common Stock;A;2026-11-27;31,68;0,13;0,1;32,55;51,8;0,69
+SIGI;Selective Insurance Group, Inc. - Common Stock;A;2026-11-27;104,93;0,01;0,22;13,49;21,25;0,81
+BMBL;Bumble Inc. - common stock;A;2026-11-27;5,99;0,17;0,07;119,41;88,96;0,83
+EXC;Exelon Corporation - Common Stock;A;2026-11-27;46,66;0,32;0,5;6,21;2,23;0,91
+SLAB;Silicon Laboratories, Inc. - Common Stock;A;2026-11-27;221,34;0,11;0,53;1,28;1,72;0,97
+XEL;Xcel Energy Inc. - Common Stock;A;2026-11-27;81,47;0,44;0,39;6,57;2,48;1,28
+RPRX;Royalty Pharma plc - Class A Ordinary Shares;A;2026-11-27;70,86;0,41;0,56;16,45;27,08;1,31
+CINF;Cincinnati Financial Corporation - Common Stock;A;2026-11-27;193,12;0,42;0,28;12,3;22,68;1,33
+CROX;Crocs, Inc. - Common Stock;A;2026-11-27;162,02;1,31;0,36;32,55;36,53;1,35
+SWIM;Latham Group, Inc. - Common Stock;A;2026-11-27;8,39;0,72;0,36;18,5;58,9;1,35
+VRSN;VeriSign, Inc. - Common Stock;A;2026-11-27;320,2;0,23;1,51;9,68;12,2;1,36
+MDLZ;Mondelez International, Inc. - Class A Common Stock;A;2026-11-27;67,77;-0,06;0,38;8,68;10,79;1,67
+SGRY;Surgery Partners, Inc. - Common Stock;A;2026-11-27;26,75;0,75;0,09;95,4;100,22;1,74
+PRCH;Porch Group, Inc. - Common Stock;A;2026-11-27;22,22;3,4;0,24;27,7;113,24;1,94
+CCEP;Coca-Cola Europacific Partners plc - Ordinary Shares;A;2026-11-27;118,06;0,06;0,56;8,21;30,18;1,95
+APPN;Appian Corporation - Class A Common Stock;A;2026-11-27;56,13;1,91;0,34;32,04;139,87;1,97
+CLMB;Climb Global Solutions, Inc. - Common Stock;A;2026-11-27;44,0;2,85;0,36;55,48;103,23;1,98
+LLYVA;Liberty Live Holdings, Inc. - Series A Liberty Live Group Common Stock;A;2026-11-27;106,43;0,89;0,22;6,55;10,5;2,0
+AMGN;Amgen Inc. - Common Stock;A;2026-11-27;474,08;1,03;0,39;9,63;40,76;2,05
+NDAQ;Nasdaq, Inc. - Common Stock;A;2026-11-27;109,14;1,93;0,5;9,9;17,96;2,07
+POOL;Pool Corporation - Common Stock;A;2026-11-27;218,2;0,31;0,22;16,02;20,29;2,07
+CTAS;Cintas Corporation - Common Stock;A;2026-11-27;228,58;0,41;0,39;11,95;33,47;2,09
+CCC;CCC Intelligent Solutions Holdings Inc. - Common Stock;A;2026-11-27;7,74;-0,26;0,2;3,34;64,68;2,15
+SIRI;SiriusXM Holdings Inc. - Common Stock;A;2026-11-27;33,01;1,54;0,34;15,66;11,82;2,22
+EVRG;Evergy, Inc. - Common Stock;A;2026-11-27;87,64;-0,15;0,27;8,67;6,83;2,3
+JCAP;Jefferson Capital, Inc. - Common Stock;A;2026-11-27;21,42;1,61;0,3;1,56;26,07;2,33
+SBUX;Starbucks Corporation - Common Stock;A;2026-11-27;108,8;0,98;0,47;0,88;9,72;2,42
+KIDS;OrthoPediatrics Corp. - Common Stock;A;2026-11-27;33,69;2,06;0,39;42,45;96,21;2,43
+FIZZ;National Beverage Corp. - Common Stock;A;2026-11-27;37,51;0,7;0,4;15,13;1,41;2,44
+APOG;Apogee Enterprises, Inc. - Common Stock;A;2026-11-27;48,26;1,69;0,21;19,66;25,64;2,51
+SAIC;Science Applications International Corporation - Common Stock;A;2026-11-27;151,22;1,9;0,44;20,05;45,12;2,51
+LNT;Alliant Energy Corporation - Common Stock;A;2026-11-27;73,22;0,11;0,27;7,63;2,25;2,53
+CME;CME Group Inc. - Class A Common Stock;A;2026-11-27;313,1;0,44;0,36;9,55;14,46;2,58
+PCTY;Paylocity Holding Corporation - Common Stock;A;2026-11-27;181,03;0,95;0,32;14,63;57,51;2,63
+DRH;Diamondrock Hospitality Company - Common Stock;A;2026-11-27;14,45;0,77;0,27;13,78;31,48;2,69
+UTHR;United Therapeutics Corporation - Common Stock;A;2026-11-27;597,72;1,19;0,19;15,96;7,35;2,69
+MAR;Marriott International - Class A Common Stock;A;2026-11-27;421,01;1,26;0,44;19,92;12,09;2,84
+PYPL;PayPal Holdings, Inc. - Common Stock;A;2026-11-27;59,14;2,3;0,49;10,21;32,16;2,84
+CSX;CSX Corporation - Common Stock;A;2026-11-27;51,38;0,43;0,39;0,2;13,52;2,87
+ACGL;Arch Capital Group Ltd. - Common Stock;A;2026-11-27;110,33;0,04;0,35;11,62;23,49;2,9
+HLT;Hilton Worldwide Holdings Inc. - Common Stock;A;2026-11-27;369,94;1,02;0,33;14,94;12,9;2,99
+CWST;Casella Waste Systems, Inc. - Class A Common Stock;A;2026-11-27;100,17;0,25;0,23;6,93;21,91;3,0
+WDFC;WD-40 Company - Common Stock;A;2026-11-27;229,08;0,74;0,71;5,48;14,56;3,21
+ORKA;Oruka Therapeutics, Inc. - Common Stock;A;2026-11-27;109,55;3,34;0,35;20,19;87,17;3,26
+GEHC;GE HealthCare Technologies Inc. - Common Stock;A;2026-11-27;84,62;1,55;0,33;17,98;35,74;3,36
+AMRX;Amneal Pharmaceuticals, Inc. - Class A Common Stock;A;2026-11-27;21,8;1,49;0,25;24,29;65,53;3,37
+BLMN;Bloomin' Brands, Inc. - Common Stock;A;2026-11-27;10,86;5,03;0,43;2,65;28,67;3,72
+KOD;Kodiak Sciences Inc - Common Stock;A;2026-11-27;111,51;1,02;0,18;195,63;203,76;3,8
+MANH;Manhattan Associates, Inc. - Common Stock;A;2026-11-27;253,36;0,55;0,24;13,47;68,85;3,84
+WMG;Warner Music Group Corp. - Class A Common Stock;A;2026-11-27;32,4;-0,18;0,57;15,59;2,73;3,84
+LLYVK;Liberty Live Holdings, Inc. - Series C Liberty Live Group Common Stock;A;2026-11-27;108,6;0,75;0,25;4,88;9,59;3,89
